@@ -5,7 +5,12 @@ lvim.plugins = {
     },
     { "lunarvim/colorschemes"},
     {"mfussenegger/nvim-jdtls"},
-    {"preservim/nerdtree"},
+    {
+    "kyazdani42/nvim-tree.lua",
+    config = function()
+      require("user.nvim-tree").config()
+    end,
+    },	
     {
     "nvim-lualine/lualine.nvim",
     config = function()
