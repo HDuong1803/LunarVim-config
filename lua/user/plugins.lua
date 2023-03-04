@@ -10,7 +10,7 @@ lvim.plugins = {
     config = function()
       require("user.nvim-tree").config()
     end,
-    },	
+    },
     {
     "nvim-lualine/lualine.nvim",
     config = function()
@@ -22,12 +22,6 @@ lvim.plugins = {
      config = function()
        require("user.lsp_signature").config()
      end,
-    },
-    {
-    "unblevable/quick-scope",
-    config = function()
-      require("user.quickscope").config()
-    end,
     },
     {
     "lukas-reineke/indent-blankline.nvim",
@@ -43,12 +37,6 @@ lvim.plugins = {
       require("user.gitlinker").config()
     end,
     },
-    {
-     "tamago324/lir.nvim",
-     config = function()
-       require ("user.lir").config()
-     end,
-   },
    {
     "andymass/vim-matchup",
     event = "CursorMoved",
@@ -119,10 +107,5 @@ lvim.plugins = {
     "tom-anders/telescope-vim-bookmarks.nvim"
   },
   {"ryanoasis/vim-devicons"},
-  {
-		"EdenEast/nightfox.nvim",
-    config = function ()
-      require('nightfox').load()
-    end,
-  },
+  {"tomlion/vim-solidity"},
 }
